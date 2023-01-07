@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Encriptador de texto</title>
+	<link rel="website icon" type="png"
+	 href="Imagenes/websiteicon.png">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+<body>
+	<header>
+		<img src="imagenes/Logo-1.png" alt="Logo">
+		<h1>Encriptador y desencriptador de texto</h1>
+	</header>
+	<main>
+		<section class="section1">
+			<textarea id="textoEncriptado" placeholder="Ingrese el texto aqui" pattern="[a-z]{1,15}"></textarea>
+			
+			<div class="contenedor-info">
+				<p>&#128712; Solo letras minúsculas y sin acentos</p>
+			</div>
+			
+			<div class="botones">
+				<input type="button" id="btn-encriptar" value="&#128274;Encriptar">
+				<input type="button" id="btn-desencriptar" value="&#128275;Desencriptar">
+			</div>
+			
+		</section>
+		<section class="section2">
+
+			<div id="contenedor-munheco">
+				<img src="imagenes/Muñeco1.png" alt="imagen muñeco">
+			</div>
+
+			<div id="contenedor-mensajederecha">
+				<h3>
+					Ningún mensaje fue encontrado
+				</h3>
+			</div>
+
+			<div id="contenedor-parrafo">
+				
+				<p>Ingresa el texto que desees encriptar o desencriptar</p>
+			</div>
+			
+			<div id="texto-vacio">
+				<h4>Por favor introduzca un texto para encriptar o desencriptar.</h4>
+			</div>
+
+			<div id="texto-caracteres">
+				<h4>Por favor introduzca un texto sin caracteres especiales.</h4>
+			</div>
+			
+			<div id="contenedor-resultado">
+				<textarea readonly id="texto-resultado"></textarea>
+			</div>
+
+			</div class=contenedor-copiar>
+				<input type="button" id="btn-copiar" value="Copiar">
+			<div>
+
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<p> &copy; 2023| Made by Gilberto | ONE-Alura</p>
+	</footer>
+	<script src="logica.js"></script>
+
+
+</body>
+</html>
